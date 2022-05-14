@@ -36,6 +36,8 @@ jobs:
       
       # Flake8 Lint steps    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # If an action is defined in a different repository than your workflow file, 
+      # you can reference the action with the {owner}/{repo}@{ref} syntax in your workflow file.
       - name: Check out source repository
         uses: actions/checkout@v2
 
